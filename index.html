@@ -216,39 +216,13 @@
   .cta-banner h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:16px;}
   .cta-banner p{color:var(--cotton-dim);margin-bottom:30px;}
 
-  /* ---------- BLOG ---------- */
-  .blog{padding:96px 0;background:var(--bg);}
-  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px;}
-  .blog-card{
-    border:1px solid var(--line);border-radius:var(--radius-s);
-    padding:26px 22px;transition:border-color .2s, transform .2s;
-  }
-  .blog-card:hover{border-color:var(--wax);transform:translateY(-4px);}
-  .blog-meta{font-family:var(--ff-mono);font-size:0.72rem;color:var(--wax-light);letter-spacing:0.04em;text-transform:uppercase;}
-  .blog-card h3{font-size:1.15rem;margin:14px 0 10px;}
-  .blog-card p{color:var(--cotton-dim);font-size:0.9rem;margin-bottom:16px;}
-  .blog-link{font-family:var(--ff-mono);font-size:0.78rem;color:var(--wax-light);}
-  .blog-link:hover{color:var(--wax);}
-
-  /* ---------- CONTACTO ---------- */
-  .contacto{padding:96px 0 110px;background:var(--bg-deep);}
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:44px;}
-  .form-group{margin-bottom:18px;}
-  label{display:block;font-family:var(--ff-mono);font-size:0.72rem;letter-spacing:0.04em;text-transform:uppercase;color:var(--cotton-dim);margin-bottom:7px;}
-  input,textarea{
-    width:100%;padding:12px 14px;background:transparent;
-    border:1px solid var(--line);border-radius:var(--radius-s);
-    color:var(--cotton);font-family:var(--ff-body);font-size:0.95rem;
-    transition:border-color .2s;
-  }
-  input:focus,textarea:focus{outline:none;border-color:var(--wax-light);}
-  textarea{resize:vertical;min-height:90px;}
-  .form-note{font-size:0.8rem;color:var(--cotton-dim);margin-top:14px;}
-  .contact-info h3{font-size:1.3rem;margin-bottom:16px;}
-  .contact-info p{color:var(--cotton-dim);margin-bottom:26px;}
-  .info-row{display:flex;gap:12px;margin-bottom:16px;font-size:0.94rem;}
-  .info-row span.k{font-family:var(--ff-mono);color:var(--wax-light);min-width:90px;font-size:0.78rem;text-transform:uppercase;letter-spacing:.03em;padding-top:2px;}
-  .social-row{display:flex;gap:14px;margin-top:30px;}
+  /* ---------- CIERRE / CONTACTO ---------- */
+  .contacto{padding:100px 0 120px;background:var(--bg-deep);}
+  .close-inner{max-width:560px;margin:0 auto;text-align:center;}
+  .close-inner h2{font-size:clamp(1.9rem,3.2vw,2.6rem);margin:16px 0 18px;}
+  .close-inner p{color:var(--cotton-dim);margin-bottom:34px;}
+  .btn-big{padding:16px 30px;font-size:0.92rem;}
+  .social-row{display:flex;gap:14px;margin-top:32px;}
   .social-pill{
     border:1px solid var(--line);padding:9px 16px;border-radius:999px;
     font-family:var(--ff-mono);font-size:0.76rem;transition:border-color .2s,color .2s;
@@ -289,8 +263,6 @@
     .features-grid{grid-template-columns:1fr;gap:30px;}
     .prod-grid{grid-template-columns:1fr 1fr;}
     .prod-card:nth-child(2),.prod-card:nth-child(5){transform:none;}
-    .blog-grid{grid-template-columns:1fr;}
-    .contact-grid{grid-template-columns:1fr;gap:40px;}
     .nav-links{display:none;}
     .hero-badge{left:12px;bottom:-16px;}
   }
@@ -312,7 +284,6 @@
       <div class="nav-links">
         <a href="#inicio">Inicio</a>
         <a href="#productos">Productos</a>
-        <a href="#blog">Blog</a>
         <a href="#contacto">Contacto</a>
       </div>
       <a class="btn btn-primary" href="https://wa.me/525500000000?text=Hola%2C%20quiero%20pedir%20Beenvoltorios" target="_blank" rel="noopener">Pedir ahora →</a>
@@ -443,74 +414,17 @@
     </div>
   </section>
 
-  <section class="blog" id="blog">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Del taller a tu cocina</span>
-        <h2>Blog</h2>
-      </div>
-      <div class="blog-grid">
-        <a class="blog-card reveal" href="https://aldohtml.github.io/blog1/">
-          <span class="blog-meta">Detrás de cámaras · 12 jul 2026</span>
-          <h3>Así nace un envoltorio: de la tela a tu refri</h3>
-          <p>Elegimos la tela, derretimos la cera con aceite de coco y resina de pino, y dejamos secar cada pieza al aire. Nada de máquinas industriales.</p>
-          <span class="blog-link">Leer artículo completo →</span>
-        </a>
-        <a class="blog-card reveal" href="https://aldohtml.github.io/blog2/">
-          <span class="blog-meta">Medio ambiente · 3 jul 2026</span>
-          <h3>Un envoltorio, mil bolsas menos</h3>
-          <p>Por qué el plástico de un solo uso tarda siglos en degradarse, y cómo un cambio pequeño en tu cocina hace una diferencia real.</p>
-          <span class="blog-link">Leer artículo completo →</span>
-        </a>
-        <a class="blog-card reveal" href="https://aldohtml.github.io/blog3/">
-          <span class="blog-meta">Tips de cuidado · 24 jun 2026</span>
-          <h3>5 usos que quizá no conocías</h3>
-          <p>Tapar bowls, madurar aguacates más lento, guardar quesos, envolver pan y hasta como bolsa reutilizable para el súper.</p>
-          <span class="blog-link">Leer artículo completo →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <section class="contacto" id="contacto">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Hablemos</span>
-        <h2>Contacto</h2>
-      </div>
-      <div class="contact-grid">
-        <form id="contact-form" class="reveal">
-          <div class="form-group">
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" required>
-          </div>
-          <div class="form-group">
-            <label for="correo">Correo electrónico</label>
-            <input type="email" id="correo" required>
-          </div>
-          <div class="form-group">
-            <label for="telefono">Teléfono / WhatsApp (opcional)</label>
-            <input type="tel" id="telefono">
-          </div>
-          <div class="form-group">
-            <label for="mensaje">¿En qué te ayudamos?</label>
-            <textarea id="mensaje" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Enviar por WhatsApp →</button>
-          <p class="form-note">Te responderemos en menos de 48 horas.</p>
-        </form>
-
-        <div class="contact-info reveal">
-          <h3>Otras formas de encontrarnos</h3>
-          <p>¿Tienes dudas sobre tallas, cuidado o quieres hacer un pedido especial? Escríbenos directo.</p>
-          <div class="info-row"><span class="k">Correo</span><span>hola@beenvoltorios.mx</span></div>
-          <div class="info-row"><span class="k">Ubicación</span><span>Ciudad de México, México</span></div>
-          <div class="social-row">
-            <a class="social-pill" href="https://instagram.com/beenvoltorios" target="_blank" rel="noopener">Instagram</a>
-            <a class="social-pill" href="https://facebook.com/beenvoltorios" target="_blank" rel="noopener">Facebook</a>
-            <a class="social-pill" href="https://wa.me/525500000000" target="_blank" rel="noopener">WhatsApp</a>
-            <a class="social-pill" href="mailto:hola@beenvoltorios.mx">Correo</a>
-          </div>
+      <div class="close-inner reveal">
+        <span class="eyebrow" style="justify-content:center;">Último paso</span>
+        <h2>Escríbenos y arma tu pedido</h2>
+        <p>Cuéntanos qué necesitas — tamaños, cantidad, para regalo o para tu cocina — y te confirmamos disponibilidad y envío directo por WhatsApp.</p>
+        <a class="btn btn-primary btn-big" href="https://wa.me/525500000000?text=Hola%2C%20quiero%20pedir%20Beenvoltorios" target="_blank" rel="noopener">🐝 Escríbenos por WhatsApp</a>
+        <div class="social-row" style="justify-content:center;">
+          <a class="social-pill" href="https://instagram.com/beenvoltorios" target="_blank" rel="noopener">Instagram</a>
+          <a class="social-pill" href="https://facebook.com/beenvoltorios" target="_blank" rel="noopener">Facebook</a>
+          <a class="social-pill" href="mailto:hola@beenvoltorios.mx">Correo</a>
         </div>
       </div>
     </div>
@@ -532,21 +446,6 @@
   </a>
 
 <script>
-  // WhatsApp form handoff: no backend, so the "submit" becomes a pre-filled WhatsApp message
-  const form = document.getElementById('contact-form');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    const nombre = document.getElementById('nombre').value.trim();
-    const correo = document.getElementById('correo').value.trim();
-    const telefono = document.getElementById('telefono').value.trim();
-    const mensaje = document.getElementById('mensaje').value.trim();
-    let text = `Hola, soy ${nombre}.\nCorreo: ${correo}`;
-    if(telefono) text += `\nTel/WhatsApp: ${telefono}`;
-    text += `\n\n${mensaje}`;
-    const url = `https://wa.me/525500000000?text=${encodeURIComponent(text)}`;
-    window.open(url, '_blank');
-  });
-
   // scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries)=>{
